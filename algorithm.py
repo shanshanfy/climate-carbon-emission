@@ -207,9 +207,9 @@ class SCORE(object):
         np.save("./Result/Order_pred.npy", Order_pred)
         np.save("./Result/Graph_pred.npy", Graph_pred)
 
-        # 使用 savetxt 函数保存数组到文本文件
-        np.savetxt("./Result/Graph_pred.txt", Graph_pred, delimiter=',', fmt='%d')  # 以逗号分隔，格式为整数
-        np.savetxt("./Result/Order_pred.txt", Order_pred, delimiter=',', fmt='%d')  # 以逗号分隔，格式为整数
+    
+        np.savetxt("./Result/Graph_pred.txt", Graph_pred, delimiter=',', fmt='%d') 
+        np.savetxt("./Result/Order_pred.txt", Order_pred, delimiter=',', fmt='%d') 
         
 
         return Order_pred, Graph_pred
